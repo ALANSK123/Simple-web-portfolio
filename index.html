@@ -2,134 +2,475 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alangir Sk</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+  <!-- SEO -->
+  <title>Alangir Sk — Software Engineer</title>
+  <meta name="description"
+    content="Portfolio of Alangir Sk, a software engineer specialising in backend systems, AI technologies, and full-stack web development." />
+  <meta name="keywords"
+    content="Alangir Sk, software engineer, backend developer, Spring Boot, FastAPI, AI, LangChain, React, portfolio" />
+  <meta name="author" content="Alangir Sk" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Alangir Sk — Software Engineer" />
+  <meta property="og:description"
+    content="Software engineer building scalable backends, AI-powered systems, and clean frontends." />
+  <meta property="og:type" content="website" />
 
-    <link rel="stylesheet" href="style.css" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
 
+  <!-- Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header>
-        <h2>AS</h2>
-        <nav>
-            <a class="darkerText" href="https://github.com/ALANSK123" target="_blank">GitHub</a>
-            <a class="darkerText" href="https://www.linkedin.com/in/alangir-sk/" target="_blank">LinkedIn</a>
 
-        </nav>
-    </header>
+  <!-- ======================================================
+       NAV
+       ====================================================== -->
+  <nav id="navbar" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" id="nav-logo">AS</a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about" id="nav-about">About</a></li>
+        <li><a href="#skills" id="nav-skills">Skills</a></li>
+        <li><a href="#projects" id="nav-projects">Projects</a></li>
+        <li><a href="#contact" class="nav-cta" id="nav-contact">Hire Me</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <main>
-        <section>
-            <div class="nameContainer">
-                <h1>Alangir Sk</h1>
-                <p class="darkerText">I write code & build projects.</p>
+  <!-- ======================================================
+       HERO
+       ====================================================== -->
+  <section id="hero" aria-label="Introduction">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-greeting">
+          <span class="dot"></span>
+          Available for opportunities
+        </span>
+
+        <h1 class="hero-name">
+          Alangir <span>Sk</span>
+        </h1>
+
+        <p class="hero-typewriter" id="typewriter" aria-label="Role description">
+          <span class="cursor" aria-hidden="true"></span>
+        </p>
+
+        <p class="hero-bio">
+          Software engineer passionate about building scalable backend systems,
+          intelligent AI pipelines, and polished frontends. I turn complex
+          problems into elegant, production-ready solutions.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" id="hero-view-work">
+            <i class="fa-solid fa-arrow-down"></i>
+            View My Work
+          </a>
+          <a href="#contact" class="btn btn-ghost" id="hero-hire-me">
+            <i class="fa-solid fa-envelope"></i>
+            Get In Touch
+          </a>
+          <a href="https://github.com/ALANSK123" target="_blank" rel="noopener" class="btn btn-ghost"
+            id="hero-github">
+            <i class="fa-brands fa-github"></i>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       ABOUT
+       ====================================================== -->
+  <section id="about" aria-label="About me">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">About Me</p>
+        <h2>Turning ideas into<br />production-grade software</h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Photo -->
+        <div class="about-photo-wrap reveal">
+          <div class="about-photo-ring">
+            <img src="./public/profile-pic-crop.JPG" alt="Alangir Sk — profile photo" />
+          </div>
+          <span class="about-badge">Open to Work</span>
+        </div>
+
+        <!-- Text -->
+        <div class="about-text reveal">
+          <h3>Hi, I'm Alangir 👋</h3>
+          <p>
+            I'm a software engineer who loves architecting robust backend systems
+            and weaving AI capabilities into real-world products. My stack spans
+            Java / Spring Boot on the backend, Python for AI pipelines, and React
+            on the frontend.
+          </p>
+          <p>
+            When I'm not shipping features, I'm exploring large language models,
+            designing microservice architectures, or contributing to open-source
+            projects. I believe great software is as much about clean code as it
+            is about thoughtful UX.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-num" id="stat-repos">4+</span>
+              <span class="stat-label">Repositories</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" id="stat-commits">25+</span>
+              <span class="stat-label">Commits this year</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" id="stat-stacks">6+</span>
+              <span class="stat-label">Tech stacks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       SKILLS
+       ====================================================== -->
+  <section id="skills" aria-label="Technical skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Skills</p>
+        <h2>Technologies I work with</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <h4>Languages</h4>
+          <div class="skill-pills" role="list">
+            <span class="pill" role="listitem"><i class="fa-brands fa-java"></i> Java</span>
+            <span class="pill" role="listitem"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="pill" role="listitem"><i class="fa-solid fa-code"></i> C++</span>
+            <span class="pill" role="listitem"><i class="fa-solid fa-code"></i> C</span>
+            <span class="pill" role="listitem"><i class="fa-solid fa-database"></i> SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h4>Backend</h4>
+          <div class="skill-pills" role="list">
+            <span class="pill" role="listitem"><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+            <span class="pill" role="listitem"><i class="fa-brands fa-python"></i> FastAPI</span>
+            <span class="pill" role="listitem"><i class="fa-brands fa-node-js"></i> Node.js</span>
+            <span class="pill" role="listitem"><i class="fa-solid fa-server"></i> Express.js</span>
+            <span class="pill" role="listitem"><i class="fa-solid fa-network-wired"></i> REST APIs</span>
+            <span class="pill" role="listitem"><i class="fa-solid fa-cubes"></i> Microservices</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h4>Frontend</h4>
+          <div class="skill-pills" role="list">
+            <span class="pill" role="listitem"><i class="fa-brands fa-react"></i> ReactJS</span>
+            <span class="pill" role="listitem"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="pill" role="listitem"><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span class="pill" role="listitem"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h4>AI &amp; Machine Learning</h4>
+          <div class="skill-pills" role="list">
+            <span class="pill" role="listitem"><i class="fa-solid fa-robot"></i> LangChain</span>
+            <span class="pill" role="listitem"><i class="fa-solid fa-diagram-project"></i> LangGraph</span>
+            <span class="pill" role="listitem"><i class="fa-solid fa-magnifying-glass"></i> RAG</span>
+            <span class="pill" role="listitem"><i class="fa-solid fa-brain"></i> LLMs</span>
+            <span class="pill" role="listitem"><i class="fa-solid fa-wand-magic-sparkles"></i> Prompt Engineering</span>
+            <span class="pill" role="listitem"><i class="fa-solid fa-vector-square"></i> Vector Embeddings</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h4>Databases</h4>
+          <div class="skill-pills" role="list">
+            <span class="pill" role="listitem"><i class="fa-solid fa-leaf"></i> MongoDB</span>
+            <span class="pill" role="listitem"><i class="fa-solid fa-database"></i> SQL</span>
+            <span class="pill" role="listitem"><i class="fa-solid fa-table-columns"></i> Vector Databases</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h4>CS Fundamentals &amp; Tools</h4>
+          <div class="skill-pills" role="list">
+            <span class="pill" role="listitem"><i class="fa-solid fa-sitemap"></i> DSA</span>
+            <span class="pill" role="listitem"><i class="fa-solid fa-object-group"></i> OOP</span>
+            <span class="pill" role="listitem"><i class="fa-solid fa-hard-drive"></i> OS</span>
+            <span class="pill" role="listitem"><i class="fa-solid fa-network-wired"></i> Computer Networks</span>
+            <span class="pill" role="listitem"><i class="fa-brands fa-git-alt"></i> Git</span>
+            <span class="pill" role="listitem"><i class="fa-brands fa-linux"></i> Linux</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       PROJECTS
+       ====================================================== -->
+  <section id="projects" aria-label="Projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Projects</p>
+        <h2>Things I've built</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 — Real -->
+        <article class="project-card reveal" id="project-google-clone">
+          <div class="project-img">
+            <img src="./public/goole-front-page.png" alt="Google Front Page Clone screenshot" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-date">June 2025</span>
+              <span class="project-status">Live</span>
+            </div>
+            <h3 class="project-title">Google Front Page Clone</h3>
+            <p class="project-desc">
+              Pixel-perfect recreation of the Google homepage using only HTML5 and CSS3.
+              Demonstrates mastery of flexbox, responsive design, and attention to detail.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Responsive</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ALANSK123" target="_blank" rel="noopener" class="project-link"
+                id="project1-github">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="https://6840bc7159d8930be6f1f72b--stately-sopapillas-48b187.netlify.app/"
+                target="_blank" rel="noopener" class="project-link" id="project1-live">
+                <i class="fa-solid fa-bolt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 — Example -->
+        <article class="project-card reveal" id="project-ai-assistant">
+          <div class="project-img" style="background: linear-gradient(135deg,#0f2a22,#0d1d1a); display:grid;place-items:center;">
+            <i class="fa-solid fa-robot" style="font-size:4rem;color:var(--accent);opacity:0.5;"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-date">2025</span>
+              <span class="project-status">In Progress</span>
+            </div>
+            <h3 class="project-title">RAG-Powered AI Assistant</h3>
+            <p class="project-desc">
+              A domain-specific AI assistant built with LangChain, LangGraph, and a vector
+              database backend. Uses retrieval-augmented generation to answer questions over
+              private document sets with high accuracy.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">LangGraph</span>
+              <span class="tag">RAG</span>
+              <span class="tag">FastAPI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ALANSK123" target="_blank" rel="noopener" class="project-link"
+                id="project2-github">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 — Example -->
+        <article class="project-card reveal" id="project-microservice">
+          <div class="project-img" style="background: linear-gradient(135deg,#0a2020,#0d1512); display:grid;place-items:center;">
+            <i class="fa-solid fa-cubes" style="font-size:4rem;color:var(--accent);opacity:0.5;"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-date">2025</span>
+              <span class="project-status">In Progress</span>
+            </div>
+            <h3 class="project-title">E-Commerce Microservices API</h3>
+            <p class="project-desc">
+              Scalable e-commerce backend decomposed into Spring Boot microservices —
+              product catalogue, order management, and user auth — communicating via
+              REST APIs with a shared MongoDB data store.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">REST API</span>
+              <span class="tag">Microservices</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ALANSK123" target="_blank" rel="noopener" class="project-link"
+                id="project3-github">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 — Example -->
+        <article class="project-card reveal" id="project-dashboard">
+          <div class="project-img" style="background: linear-gradient(135deg,#0d1a12,#0a1510); display:grid;place-items:center;">
+            <i class="fa-solid fa-chart-line" style="font-size:4rem;color:var(--accent);opacity:0.5;"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-date">2025</span>
+              <span class="project-status">In Progress</span>
+            </div>
+            <h3 class="project-title">Real-Time Analytics Dashboard</h3>
+            <p class="project-desc">
+              A React-based dashboard consuming a Node.js/Express REST API to visualise
+              live metrics. Features interactive charts, dark-mode UI, and role-based
+              access control.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">REST API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ALANSK123" target="_blank" rel="noopener" class="project-link"
+                id="project4-github">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       CONTACT
+       ====================================================== -->
+  <section id="contact" aria-label="Contact me">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Contact</p>
+        <h2>Let's work together</h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Left: info -->
+        <div class="contact-info reveal">
+          <h3>Have a project in mind?</h3>
+          <p>
+            I'm currently open to full-time roles, freelance projects, and
+            interesting collaborations. Drop me a message and I'll get back to
+            you within 24 hours.
+          </p>
+
+          <div class="contact-socials">
+            <a href="mailto:alangirskgo@gmail.com" class="social-link" id="contact-email">
+              <i class="fa-solid fa-envelope"></i>
+              alangirskgo@gmail.com
+            </a>
+            <a href="https://github.com/ALANSK123" target="_blank" rel="noopener" class="social-link"
+              id="contact-github">
+              <i class="fa-brands fa-github"></i>
+              github.com/ALANSK123
+            </a>
+            <a href="https://www.linkedin.com/in/alangir-sk/" target="_blank" rel="noopener" class="social-link"
+              id="contact-linkedin">
+              <i class="fa-brands fa-linkedin"></i>
+              linkedin.com/in/alangir-sk
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <div class="contact-form reveal" id="contact-form-wrap">
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="cf-name">Name</label>
+                <input type="text" id="cf-name" name="from_name" placeholder="John Doe" required />
+              </div>
+              <div class="form-field">
+                <label for="cf-email">Email</label>
+                <input type="email" id="cf-email" name="from_email" placeholder="john@example.com" required />
+              </div>
             </div>
 
-            <div class="statsContainer">
-                <div class="imageContainer">
-                    <img src="./public/profile-pic-crop.JPG" alt="profile-image" />
-                </div>
-
-                <div class="stats darkerText">
-                    <div>
-                        <div>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p>4 GitHub Repositories</p>
-                    </div>
-                    <div>
-                        <div>
-
-                            <i class="fa-brands fa-github"></i>
-                        </div>
-                        <p>2 Followers</p>
-                    </div>
-                    <div>
-                        <div>
-
-                            <i class="fa-solid fa-arrow-trend-up"></i>
-                        </div>
-                        <p>25 Commits This Year</p>
-                    </div>
-                </div>
-            </div>
-            <p class="aboutMe">Hi, I'm Alangir Sk, a software engineer who loves building cool things with code.</p>
-            <div>
-                <a href="mailto:alangirskgo@gmail.com" class="outReach darkerText" >
-                    <i class="fa-solid fa-arrow-right"></i>
-                    <p>Email me</p>
-                </a>
-            </div>
-        </section>
-        <section class="projectContainer">
-            <p class="darkerText projectHeaderText">Latest Projects</p>
-            <div class="projectItem">
-                <div>
-                    <p class="darkerText">June 10, 2025</p>
-                    <p>Google Front Page only HTML & CSS</p>
-
-                    <div class="linkContainer">
-                        <a target="_blank" href="https://6840bc7159d8930be6f1f72b--stately-sopapillas-48b187.netlify.app/" class="linkItem"> 
-                            <div> 
-                                <i class="fa-brands fa-github"></i>
-                            </div>
-                            <p>GitHub</p>
-                        </a>
-
-                        <a target="_blank" href="https://6840bc7159d8930be6f1f72b--stately-sopapillas-48b187.netlify.app/" class="linkItem"> 
-                            <div> 
-                                <i class="fa-solid fa-bolt"></i>
-                            </div>
-                            <p>Live</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="./public/goole-front-page.png" alt="project-name" />
-                </div>
+            <div class="form-field">
+              <label for="cf-subject">Subject</label>
+              <input type="text" id="cf-subject" name="subject" placeholder="Project inquiry…" required />
             </div>
 
-            <!-- <div class="projectItem">
-                <div>
-                    <p class="darkerText">June 10, 2025</p>
-                    <p>Google Front Page only HTML & CSS</p>
+            <div class="form-field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" placeholder="Tell me about your project…" required></textarea>
+            </div>
 
-                    <div class="linkContainer">
-                        <a target="_blank" href="https://6840bc7159d8930be6f1f72b--stately-sopapillas-48b187.netlify.app/" class="linkItem"> 
-                            <div> 
-                                <i class="fa-brands fa-github"></i>
-                            </div>
-                            <p>GitHub</p>
-                        </a>
+            <div id="form-status" class="form-status" role="alert" aria-live="polite"></div>
 
-                        <a target="_blank" href="https://6840bc7159d8930be6f1f72b--stately-sopapillas-48b187.netlify.app/" class="linkItem"> 
-                            <div> 
-                                <i class="fa-solid fa-bolt"></i>
-                            </div>
-                            <p>Live</p>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <img src="./public/goole-front-page.png" alt="project-name" />
-                </div>
-            </div> -->
-        </section>
-    </main>
+            <button type="submit" class="btn btn-primary" id="form-submit" style="width:100%;justify-content:center;">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span id="form-btn-text">Send Message</span>
+            </button>
+          </form>
+        </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-copy">© 2025 Alangir Sk. Built with ♥ and vanilla HTML/CSS/JS.</p>
+      <div class="footer-links">
+        <a href="https://github.com/ALANSK123" target="_blank" rel="noopener" id="footer-github">GitHub</a>
+        <a href="https://www.linkedin.com/in/alangir-sk/" target="_blank" rel="noopener" id="footer-linkedin">LinkedIn</a>
+        <a href="mailto:alangirskgo@gmail.com" id="footer-email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
