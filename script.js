@@ -85,6 +85,7 @@ function initTypewriter() {
     'AI Systems Builder.',
     'Full-Stack Developer.',
     'Problem Solver.',
+    'System Design Enthusiast.',
   ];
 
   // Ensure cursor is the last child
