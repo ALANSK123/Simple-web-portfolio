@@ -13,9 +13,9 @@
 // 1. Sign up → Email Services → Add Service (Gmail / Outlook)
 // 2. Email Templates → Create Template (use {{from_name}}, {{from_email}}, {{subject}}, {{message}})
 // 3. Account → Public Key
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';   // e.g. 'service_abc123'
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // e.g. 'template_xyz789'
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';   // e.g. 'abcDEFghiJKL'
+const EMAILJS_SERVICE_ID  = 'service_s9rkds2';   // e.g. 'service_abc123'
+const EMAILJS_TEMPLATE_ID = 'template_g2qqf0b';  // e.g. 'template_xyz789'
+const EMAILJS_PUBLIC_KEY  = 'EpMHtAZCmIGAu1tde';   // e.g. 'abcDEFghiJKL'
 // ─────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
